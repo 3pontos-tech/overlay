@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite & npx nodecg start",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "nodecg": "2.5.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -37,6 +38,16 @@
         "width": 1920,
         "height": 1080
       }
+    ],
+    "dashboardPanels": [
+      {
+        "name": "lower-third",
+        "title": "Lower Third",
+        "width": 2,
+        "headerColor": "#2d4e8a",
+        "file": "lower-third/index.html"
+      }
     ]
-  }
+  },
+  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
 }

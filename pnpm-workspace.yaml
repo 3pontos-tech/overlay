@@ -1,0 +1,7 @@
+ignoredBuiltDependencies:
+  - '@vaadin/vaadin-usage-statistics'
+  - esbuild
+  - iframe-resizer
+
+onlyBuiltDependencies:
+  - better-sqlite3

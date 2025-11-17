@@ -14,7 +14,7 @@ export default defineConfig({
       // srcDir: "./src",
       inputs: {
         "graphics/*/*.{js,ts,tsx}": "./src/template.html",
-        "dashboard/*.{js,ts,tsx}": "./src/template.html",
+        "dashboard/*/*.{js,ts,tsx}": "./src/template.html",
       },
     }),
   ],
