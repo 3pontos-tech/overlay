@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Talk",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "talk": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "startsAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "speaker": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "photo": {
+          "type": "string"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  "required": ["talk", "speaker"],
+  "default": {
+    "talk": "",
+    "startsAt": "1970-01-01T00:00:00Z",
+    "speaker": {
+      "name": ""
+    }
+  }
+}

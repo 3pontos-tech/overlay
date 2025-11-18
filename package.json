@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite & npx nodecg start",
+    "dev": "vite & nodecg start",
     "build": "tsc -b && vite build",
+    "build:types": "rimraf src/types/schemas && nodecg schema-types -o ./src/types",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nodecg/react-hooks": "^1.0.3",
     "nodecg": "2.5.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
@@ -25,6 +27,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "rimraf": "^6.1.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.3",
     "vite": "^7.2.2",
@@ -43,7 +46,7 @@
       {
         "name": "lower-third",
         "title": "Lower Third",
-        "width": 2,
+        "width": 4,
         "headerColor": "#2d4e8a",
         "file": "lower-third/index.html"
       }
