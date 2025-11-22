@@ -1,9 +1,9 @@
 import { useReplicant } from "@nodecg/react-hooks";
 import { StrictMode, useEffect } from "react";
-import type { TalkList } from "../../../types/list.talk";
-import { render } from "../../render";
 import { useFieldArray, useForm } from "react-hook-form";
 import { Clock } from "lucide-react";
+import type { TalkList } from "@/types/list.talk";
+import { render } from "@/browser/render";
 
 const TalksPanel: React.FC = () => {
   const [value, setValue] = useReplicant<TalkList>("list.talk");

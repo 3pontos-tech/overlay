@@ -1,7 +1,7 @@
+import { render } from "@/browser/render";
+import type { TalkHappeningNow } from "@/types/happening-now.talk";
 import { useReplicant } from "@nodecg/react-hooks";
 import { StrictMode } from "react";
-import type { TalkHappeningNow } from "../../../types/happening-now.talk";
-import { render } from "../../render";
 
 const LowerThirdPanel: React.FC = () => {
   const [value] = useReplicant<TalkHappeningNow>("happening-now.talk");
