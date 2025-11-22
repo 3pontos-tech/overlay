@@ -25,9 +25,9 @@ dist-ssr
 
 # NodeCG output files
 dashboard
-!src/dashboard
+!src/browser/dashboard
 graphics
-!src/graphics
+!src/browser/graphics
 cfg
 db
 assets

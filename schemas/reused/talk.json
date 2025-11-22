@@ -11,8 +11,7 @@
       "type": "string"
     },
     "startsAt": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "speaker": {
       "type": "object",

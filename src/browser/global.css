@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-card-background: #0f0f10;
+
+    --color-outline-dark: #2c2c2d;
+    --color-outline-light: #e8e9f1;
+
+    --color-text-medium: #9c9c9c;
+    --color-text-high: #fdfdfd;
+}
+
+body {
+    background: #09090a;
+    font-family: "Satoshi", sans-serif;
+}
