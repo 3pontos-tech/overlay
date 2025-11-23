@@ -6,9 +6,13 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type TalkHappeningNow = Talk;
+export type TalkHappeningNow = {
+	mode: 'soon' | 'now';
+	talk: Talk;
+} | null;
 
 export interface Talk {
+	talkId: string;
 	talk: string;
 	description?: string;
 	startsAt?: string;

@@ -1,9 +1,28 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "$id": "talk-happening-now",
-  "allOf": [
+
+  "oneOf": [
     {
-      "$ref": "./reused/talk.json"
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["soon", "now"]
+        },
+        "talk": {
+          "allOf": [
+            {
+              "$ref": "./reused/talk.json"
+            }
+          ]
+        }
+      },
+      "required": ["talk", "mode"]
+    },
+    {
+      "type": "null"
     }
   ]
 }

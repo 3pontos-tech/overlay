@@ -9,6 +9,7 @@
 export type TalkList = Talk[];
 
 export interface Talk {
+	talkId: string;
 	talk: string;
 	description?: string;
 	startsAt?: string;

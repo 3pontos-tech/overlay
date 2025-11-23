@@ -4,6 +4,9 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "talkId": {
+      "type": "string"
+    },
     "talk": {
       "type": "string"
     },
@@ -30,10 +33,10 @@
       "required": ["name"]
     }
   },
-  "required": ["talk", "speaker"],
+  "required": ["talkId", "talk", "speaker"],
   "default": {
+    "talkId": "123",
     "talk": "",
-    "startsAt": "1970-01-01T00:00:00Z",
     "speaker": {
       "name": ""
     }

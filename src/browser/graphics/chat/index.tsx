@@ -4,11 +4,11 @@ import { useReplicant } from "@nodecg/react-hooks";
 import { StrictMode } from "react";
 
 const LowerThirdPanel: React.FC = () => {
-  const [value] = useReplicant<TalkHappeningNow>("happening-now.talk");
+  const [talk] = useReplicant<TalkHappeningNow>("happening-now.talk");
 
   return (
     <div>
-      <p className="text-amber-800">{JSON.stringify(value, null, 2)}</p>
+      <p className="text-amber-800">{JSON.stringify(talk, null, 2)}</p>
     </div>
   );
 };
