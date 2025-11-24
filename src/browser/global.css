@@ -11,6 +11,8 @@
 
     --color-text-medium: #9c9c9c;
     --color-text-high: #fdfdfd;
+
+    --font-space-grotesk: "Space Grotesk", sans-serif;
 }
 
 body {

@@ -1,0 +1,46 @@
+.scene {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+
+    &__content {
+        position: absolute;
+        inset-block: 0px;
+        left: 200px;
+
+        width: 960px;
+        height: fit-content;
+        margin: auto;
+        color: white;
+
+        &__title {
+            font-family: "LD_Proxy_Mono";
+            font-size: 48px;
+
+            span[data-type="highlighted"] {
+                color: var(--color-text-medium);
+            }
+        }
+
+        &__clock {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            margin-top: 20px;
+            margin-left: 120px;
+
+            &__timer {
+                font-family: "LD_Proxy_Mono";
+                font-size: 44px;
+                display: flex;
+            }
+
+            &__description {
+                font-family: "Space Grotesk";
+                font-size: 24px;
+                color: var(--color-text-medium);
+            }
+        }
+    }
+}

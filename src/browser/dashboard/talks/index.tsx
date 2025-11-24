@@ -16,6 +16,7 @@ import {
 } from "@/browser/components/ui/select";
 import type { TalkHappeningNow } from "@/types/happening-now.talk";
 import { PhotoSelector } from "@/browser/components/ui/photo-selector";
+import { Button } from "@/browser/components/ui/button";
 
 const TalksPanel: React.FC = () => {
   const [talks, setValue] = useReplicant<TalkList>("list.talk");
@@ -174,24 +175,21 @@ const TalksPanel: React.FC = () => {
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="w-full p-2 outline outline-outline-dark bg-card-background rounded-2xl"
-            >
+            <Button type="submit" className="w-full">
               Salvar Talk
-            </button>
+            </Button>
 
-            <button
+            <Button
               type="button"
-              className="w-full p-2 outline outline-outline-dark bg-card-background rounded-2xl"
+              className="w-full"
               onClick={() => remove(index)}
             >
               Deletar Talk
-            </button>
+            </Button>
 
-            <button
+            <Button
               type="button"
-              className="w-full p-2 outline outline-outline-dark bg-card-background rounded-2xl"
+              className="w-full"
               onClick={() => {
                 const { id, ...talk } = field;
                 setTalkHappening({
@@ -206,11 +204,11 @@ const TalksPanel: React.FC = () => {
               talkHappening.mode === "now"
                 ? "🔴"
                 : undefined}
-            </button>
+            </Button>
 
-            <button
+            <Button
               type="button"
-              className="w-full p-2 outline outline-outline-dark bg-card-background rounded-2xl"
+              className="w-full"
               onClick={() => {
                 const { id, ...talk } = field;
                 setTalkHappening({
@@ -225,18 +223,18 @@ const TalksPanel: React.FC = () => {
               talkHappening.mode === "soon"
                 ? "🔴"
                 : undefined}
-            </button>
+            </Button>
           </Activity>
         ))}
       </form>
 
-      <button
+      <Button
         type="button"
-        className="w-full p-2 outline outline-outline-dark bg-card-background rounded-2xl"
+        className="w-full"
         onClick={() => setTalkHappening(null)}
       >
         Desativar lower-third
-      </button>
+      </Button>
     </div>
   );
 };

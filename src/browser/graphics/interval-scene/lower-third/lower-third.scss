@@ -1,0 +1,36 @@
+.widget {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+
+    height: fit-content;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &[data-active="true"] > * {
+        opacity: 1;
+        translate: 0px 0px;
+    }
+
+    &__tag {
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    &__clock {
+        display: flex;
+        gap: 12px;
+        color: white;
+        font-weight: bold;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+    }
+}
