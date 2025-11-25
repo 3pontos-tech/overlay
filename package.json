@@ -31,8 +31,8 @@
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.0",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.0",
     "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9.39.1",
@@ -58,6 +58,11 @@
       },
       {
         "file": "interval-scene.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "bento-overlay.html",
         "width": 1920,
         "height": 1080
       }

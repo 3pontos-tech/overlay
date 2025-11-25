@@ -1,6 +1,6 @@
 import { render } from "@/browser/render";
 import { StrictMode } from "react";
-import { LowerThirdPanel } from "./lower-third";
+import { IntervalLowerThird } from "./lower-third";
 import "./interval-scene.scss";
 import { splitAccentText } from "@/browser/lib/splitAccentText";
 import { Timer } from "@/browser/components/timer";
@@ -34,7 +34,7 @@ const IntervalScene: React.FC = () => {
         </div>
       </div>
 
-      <LowerThirdPanel />
+      <IntervalLowerThird />
     </div>
   );
 };

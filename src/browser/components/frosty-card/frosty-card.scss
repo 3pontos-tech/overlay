@@ -1,0 +1,10 @@
+.frosty-card {
+    &__divider {
+        position: absolute;
+        inset-inline: 0px;
+        bottom: 0px;
+
+        height: 20px;
+        background: var(--color-outline-light);
+    }
+}
