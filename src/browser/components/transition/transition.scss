@@ -1,0 +1,15 @@
+.sidebar {
+    &__pattern {
+        animation: sidebar-mask-loop 4s linear infinite;
+    }
+}
+
+@keyframes sidebar-mask-loop {
+    0% {
+        mask-position: 50% 147px;
+    }
+
+    100% {
+        mask-position: 50% 0px;
+    }
+}

@@ -18,8 +18,12 @@ import { Input } from "@/browser/components/ui/input";
 import { Button } from "@/browser/components/ui/button";
 import { Textarea } from "@/browser/components/ui/textarea";
 import { Timer } from "@/browser/components/timer";
+import type { IntervalSceneToggle } from "@/types/toggle.interval-scene";
 
 const IntervalScenePanel: React.FC = () => {
+  const [toggleInterval, setToggleInterval] = useReplicant<IntervalSceneToggle>(
+    "toggle.interval-scene",
+  );
   const [intervalTimer, setIntervalTimer] = useReplicant<IntervalSceneTimer>(
     "timer.interval-scene",
   );
@@ -40,6 +44,21 @@ const IntervalScenePanel: React.FC = () => {
 
   return (
     <div className="min-h-96 flex flex-col gap-4">
+      <div className="flex gap-4">
+        <Button
+          onClick={() => setToggleInterval(true)}
+          style={{ opacity: toggleInterval ? 0.5 : 1 }}
+        >
+          Ativar
+        </Button>
+        <Button
+          onClick={() => setToggleInterval(false)}
+          style={{ opacity: !toggleInterval ? 0.5 : 1 }}
+        >
+          Desativar
+        </Button>
+      </div>
+
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField

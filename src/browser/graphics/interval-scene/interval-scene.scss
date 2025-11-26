@@ -1,7 +1,19 @@
 .scene {
+    --sidebar-width: 100px;
+
     position: relative;
-    width: 1920px;
+    width: calc(1920px - var(--sidebar-width));
     height: 1080px;
+    margin-left: var(--sidebar-width);
+
+    background: url("./images/interval-bg.png");
+
+    opacity: 0;
+    &[data-active="true"] {
+        opacity: 1;
+    }
+
+    transition: opacity 0.2s 1s;
 
     &__content {
         position: absolute;
