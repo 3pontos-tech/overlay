@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "../../extension",
+
+    "target": "ES2016",
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"]
+}

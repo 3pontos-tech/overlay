@@ -2,9 +2,10 @@
   "name": "3p-stream-kit",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite & nodecg start",
+    "dev": "pnpm run /^dev:.*/",
+    "dev:browser": "vite & nodecg start",
+    "dev:extension": "tsc -b src/extension -w",
     "build": "tsc -b && vite build",
     "build:types": "rimraf src/types/schemas && nodecg schema-types -o ./src/types",
     "lint": "eslint .",

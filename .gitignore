@@ -28,6 +28,8 @@ dashboard
 !src/browser/dashboard
 graphics
 !src/browser/graphics
+extension
+!src/extension
 cfg
 db
 assets
