@@ -1,3 +1,4 @@
+import { IntervalSceneToggle } from "../../types/toggle.interval-scene";
 import { getContext } from "../utils/context";
 
 export const startIntervalSceneModule = () => {
@@ -5,9 +6,15 @@ export const startIntervalSceneModule = () => {
 
   const router = nodecg.Router();
 
-  router.get("/test", (_, res) => {
-    res.json("test");
+  router.post("/toggle", (_, res) => {
+    const replicant = nodecg.Replicant<IntervalSceneToggle>(
+      "toggle.interval-scene",
+    );
+
+    replicant.value = !replicant.value;
+
+    res.json(replicant.value);
   });
 
-  nodecg.mount("/", router);
+  nodecg.mount("/interval-scene", router);
 };
