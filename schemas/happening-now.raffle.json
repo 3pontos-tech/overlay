@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "raffle-happening-now",
+
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": ""
+        },
+        "photo": {
+          "type": "string",
+          "default": ""
+        }
+      },
+      "required": ["name", "photo"]
+    },
+    {
+      "type": "null"
+    }
+  ]
+}

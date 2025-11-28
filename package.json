@@ -82,12 +82,29 @@
         "width": 3,
         "headerColor": "#2d4e8a",
         "file": "interval-scene.html"
+      },
+      {
+        "name": "raffle",
+        "title": "Sorteio",
+        "width": 3,
+        "headerColor": "#2d4e8a",
+        "file": "raffle.html"
       }
     ],
     "assetCategories": [
       {
         "name": "speakers",
         "title": "Participantes",
+        "allowedTypes": [
+          "jpg",
+          "jpeg",
+          "gif",
+          "png"
+        ]
+      },
+      {
+        "name": "raffle",
+        "title": "Sorteio",
         "allowedTypes": [
           "jpg",
           "jpeg",

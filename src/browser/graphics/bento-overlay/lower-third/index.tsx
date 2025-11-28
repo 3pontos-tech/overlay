@@ -22,7 +22,7 @@ export const BentoLowerThird: React.FC = () => {
           exit="exit"
           className="max-w-[580px] p-8 bg-card-background/65 backdrop-blur-[32px] overflow-clip rounded-xl flex flex-col gap-2"
         >
-          <LowerThird />
+          <LowerThird key="lower-third-info" />
         </m.div>
       ) : undefined}
     </AnimatePresence>

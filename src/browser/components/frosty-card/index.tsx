@@ -1,9 +1,9 @@
 import { cn } from "@/browser/lib/utils";
 import type { ComponentProps, PropsWithChildren } from "react";
 import "./frosty-card.scss";
-import { motion as m } from "motion/react";
+import { motion as m, motion } from "motion/react";
 
-export const FrostyCard: React.FC<
+const _FrostyCard: React.FC<
   PropsWithChildren<ComponentProps<typeof m.div>>
 > = ({ className, children, ...props }) => {
   return (
@@ -19,3 +19,5 @@ export const FrostyCard: React.FC<
     </m.div>
   );
 };
+
+export const FrostyCard = motion.create(_FrostyCard);
